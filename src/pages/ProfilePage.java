@@ -72,7 +72,7 @@ public class ProfilePage extends BasicPage {
 	}
 
 	public WebElement getSaveButton() {
-		return driver.findElement(By.name("btn_submit"));
+		return driver.findElement(By.xpath("//input[@class ='btn btn--primary block-on-mobile']"));
 
 	}
 
@@ -129,7 +129,8 @@ public class ProfilePage extends BasicPage {
 		this.getCityField().selectByVisibleText(city);
 		Thread.sleep(500);
 		
-		this.getSaveButton().click();
+		this.getSaveButton().submit();
+		Thread.sleep(1000);
 
 	}
 }
