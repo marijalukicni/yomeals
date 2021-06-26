@@ -102,7 +102,7 @@ public class ProfilePage extends BasicPage {
 
 	}
 
-	public void changePersonalInformation (String firstName, String lastName, String email, String address, String phoneNumber,
+	public void changePersonalInformation (String firstName, String lastName, String address, String phoneNumber,
 			String zipCode, String country, String state, String city) throws InterruptedException {
 
 		this.getFirstNameField().clear();
