@@ -111,9 +111,6 @@ public class ProfilePage extends BasicPage {
 		this.getLastNameField().clear();
 		this.getLastNameField().sendKeys(lastName);
 
-		this.getEmailField().clear();
-		this.getEmailField().sendKeys(email);
-
 		this.getAddressField().clear();
 		this.getAddressField().sendKeys(address);
 
