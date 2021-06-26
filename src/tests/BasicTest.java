@@ -39,7 +39,7 @@ public abstract class BasicTest {
 	protected String password;
 	protected String locationName;
 
-	protected LocationPopUpPage LocationpopUpPage;
+	protected LocationPopUpPage locationPopUpPage;
 	protected LoginPage loginPage;
 	protected NotificationSystemPage notificationSystemPage;
 	protected ProfilePage profilePage;
@@ -63,7 +63,7 @@ public abstract class BasicTest {
 		this.email = "customer@dummyid.com";
 		this.password = "12345678a";
 
-		this.LocationpopUpPage = new LocationPopUpPage(driver, waiter, js);
+		this.locationPopUpPage = new LocationPopUpPage(driver, waiter, js);
 		this.loginPage = new LoginPage(driver, waiter, js);
 		this.profilePage = new ProfilePage(driver, waiter, js);
 		this.notificationSystemPage = new NotificationSystemPage(driver, waiter, js);
