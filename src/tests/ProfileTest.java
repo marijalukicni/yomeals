@@ -29,8 +29,7 @@ public class ProfileTest extends BasicTest {
 	}
 	
 	@Test(priority = 2)
-	public void changeImgTest() throws IOException, InterruptedException {
-		
+	public void changeProfileImageTest() throws IOException, InterruptedException {
 		driver.get(baseUrl + "guest-user/login-form");
 		Thread.sleep(1000);
 		this.locationPopUpPage.closeDialog();
@@ -46,10 +45,12 @@ public class ProfileTest extends BasicTest {
 		this.notificationSystemPage.waitUntilMessageDisappears();
 		
 		this.profilePage.removeImage();
+		Thread.sleep(500);
 		Assert.assertTrue(this.notificationSystemPage.getMessageText().contains("Profile Image Deleted Successfully"), "[ERROR] Delete image failed");
 		this.notificationSystemPage.waitUntilMessageDisappears();
 		
 		this.authPage.logout();
+		Thread.sleep(500);
 		Assert.assertTrue(this.notificationSystemPage.getMessageText().contains("Logout Successfull"), "[ERROR] Unexpected logout message");
 		this.notificationSystemPage.waitUntilMessageDisappears();
 		
