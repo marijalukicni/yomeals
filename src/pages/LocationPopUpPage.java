@@ -15,7 +15,7 @@ public class LocationPopUpPage extends BasicPage {
 	}
 
 	public WebElement getSelectLocationElement() {
-		return driver.findElement(By.xpath("//*[@class=\"location-search-wrapper\"]"));
+		return driver.findElement(By.xpath("//*[@class='location-selector']"));
 
 	}
 
