@@ -28,7 +28,7 @@ public class LoginPage extends BasicPage {
 		
 	}
 
-	public void logIn(String email, String password) {
+	public void login(String email, String password) {
 		this.getEmail().clear();
 		this.getEmail().sendKeys(email);
 		this.getPassword().clear();
