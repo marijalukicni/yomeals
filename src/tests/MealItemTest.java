@@ -46,8 +46,9 @@ public class MealItemTest extends BasicTest {
 		this.loginPage.login(email, password);
 
 		driver.navigate().to(baseUrl + "meal/lobster-shrimp-chicken-quesadilla-combo");
+		Thread.sleep(1000);
 		this.mealPage.addToFavourites();
-		Thread.sleep(500);
+		Thread.sleep(1000);
 		Assert.assertTrue(this.notificationSystemPage.getMessageText().contains("Product has been added to your favorites"), "[ERROR] Add to favorites failed");
 		this.notificationSystemPage.waitUntilMessageDisappears();
 
