@@ -32,7 +32,7 @@ public class SearchResultPage extends BasicPage {
 		
 	}
 	
-	public int getNumberOfeResults() {
+	public int getNumberOfResults() {
 		return this.getSearchResults().size();
 		
 	}
